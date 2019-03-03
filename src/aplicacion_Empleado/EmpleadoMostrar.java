@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package aplicacion_Empleado;
-
+// we call the main class
 import Trabajo.Empleado;
 import javax.swing.JOptionPane;
 
@@ -17,12 +17,15 @@ public class EmpleadoMostrar {
     public static void main(String[] args) {
         String desea;
         int menu;
+        //the variable of the 5 employees are created to fill with the data that the user requests
         
         Empleado empleado1 = new Empleado();
         Empleado empleado2 = new Empleado();
         Empleado empleado3 = new Empleado();
         Empleado empleado4 = new Empleado();
         Empleado empleado5 = new Empleado();
+        
+             //the data of the user of the 5 employees is requested
         
    empleado1.setNombre(JOptionPane.showInputDialog("Digite el nombre del primer Empleado: ")) ;  
    empleado1.setEdad(Short.parseShort(JOptionPane.showInputDialog("Digite la edad del primer Empleado: "))) ; 
@@ -49,8 +52,9 @@ public class EmpleadoMostrar {
    empleado5.setDireccion(JOptionPane.showInputDialog("Digite la direccion del Quinto  Empleado: ")) ;  
    empleado5.setTelefono(Long.parseLong(JOptionPane.showInputDialog("Digite el telefono del Quinto  Empleado: "))) ;  
        
-
+   // we make a menu for the employee to look at your data and we ask you question that if you want to read the data of another employee 
 do {       
+    
         menu=Integer.parseInt(JOptionPane.showInputDialog("Este menu es para los empleados, digite un numero para ver la informacion de cada uno: \n 1.Empleado1 \n 2.Empleado2 \n 3.Empleado3 \n 4.Empleado4 \n 5.Empleado5  "));
         
         switch(menu){
