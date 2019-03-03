@@ -11,8 +11,9 @@ import javax.swing.JOptionPane;
  *
  * @author eison
  */
+               // class constructor
 public class Empleado {
-    
+    // global variables
    private String nombre;
    private short edad;
    private String direccion;
@@ -21,6 +22,7 @@ public class Empleado {
     /**
      * @return the nombre
      */
+            //encapsulation of the variables
     public String getNombre() {
         return nombre;
     }
