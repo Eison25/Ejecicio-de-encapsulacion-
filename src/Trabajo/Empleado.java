@@ -5,24 +5,33 @@
  */
 package Trabajo;
 
-import javax.swing.JOptionPane;
+
 
 /**
  *
  * @author eison
  */
-               // class constructor
+ // class constructor
 public class Empleado {
-    // global variables
-   private String nombre;
-   private short edad;
-   private String direccion;
-   private long telefono ;
+    
+    private String nombre;
+    private int edad;
+    private String direccion;
+    private int telefono;
+    
+     // class constructor overloaded
+    
+    public Empleado(String nombre, int edad, String direccion, int telefono) {
+
+        this.nombre= nombre;
+        this.edad=edad;
+        this.direccion=direccion;
+        this.telefono= telefono;
+    }
 
     /**
      * @return the nombre
      */
-            //encapsulation of the variables
     public String getNombre() {
         return nombre;
     }
@@ -37,14 +46,14 @@ public class Empleado {
     /**
      * @return the edad
      */
-    public short getEdad() {
+    public int getEdad() {
         return edad;
     }
 
     /**
      * @param edad the edad to set
      */
-    public void setEdad(short edad) {
+    public void setEdad(int edad) {
         this.edad = edad;
     }
 
@@ -65,18 +74,15 @@ public class Empleado {
     /**
      * @return the telefono
      */
-    public long getTelefono() {
+    public int getTelefono() {
         return telefono;
     }
 
     /**
      * @param telefono the telefono to set
      */
-    public void setTelefono(long telefono) {
+    public void setTelefono(int telefono) {
         this.telefono = telefono;
     }
-
-    /**
-     * @return the nombre
-     */
+    
 }
