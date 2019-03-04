@@ -14,43 +14,17 @@ import javax.swing.JOptionPane;
  */
 public class EmpleadoMostrar {
     
-    public static void main(String[] args) {
-        String desea;
-        int menu;
+      public static void main(String[] args) {
         //the variable of the 5 employees are created to fill with the data that the user requests
-        
-        Empleado empleado1 = new Empleado();
-        Empleado empleado2 = new Empleado();
-        Empleado empleado3 = new Empleado();
-        Empleado empleado4 = new Empleado();
-        Empleado empleado5 = new Empleado();
-        
-             //the data of the user of the 5 employees is requested
-        
-   empleado1.setNombre(JOptionPane.showInputDialog("Digite el nombre del primer Empleado: ")) ;  
-   empleado1.setEdad(Short.parseShort(JOptionPane.showInputDialog("Digite la edad del primer Empleado: "))) ; 
-   empleado1.setDireccion(JOptionPane.showInputDialog("Digite la direccion del primer Empleado: ")) ;  
-   empleado1.setTelefono(Long.parseLong(JOptionPane.showInputDialog("Digite el telefono del primer Empleado: "))) ;  
-   
-   empleado2.setNombre(JOptionPane.showInputDialog("Digite el nombre del segundo Empleado: ")) ;  
-   empleado2.setEdad(Short.parseShort(JOptionPane.showInputDialog("Digite la edad del segundo  Empleado: "))) ; 
-   empleado2.setDireccion(JOptionPane.showInputDialog("Digite la direccion del segundo  Empleado: ")) ;  
-   empleado2.setTelefono(Long.parseLong(JOptionPane.showInputDialog("Digite el telefono del segundo  Empleado: "))) ;  
-  
-   empleado3.setNombre(JOptionPane.showInputDialog("Digite el nombre del tercer Empleado: ")) ;  
-   empleado3.setEdad(Short.parseShort(JOptionPane.showInputDialog("Digite la edad del tercer Empleado: "))) ; 
-   empleado3.setDireccion(JOptionPane.showInputDialog("Digite la direccion del tercer Empleado: ")) ;  
-   empleado3.setTelefono(Long.parseLong(JOptionPane.showInputDialog("Digite el telefono del tercer Empleado: "))) ;  
-   
-   empleado4.setNombre(JOptionPane.showInputDialog("Digite el nombre del cuarto Empleado: ")) ;  
-   empleado4.setEdad(Short.parseShort(JOptionPane.showInputDialog("Digite la edad del cuarto Empleado: "))) ; 
-   empleado4.setDireccion(JOptionPane.showInputDialog("Digite la direccion del cuarto Empleado: ")) ;  
-   empleado4.setTelefono(Long.parseLong(JOptionPane.showInputDialog("Digite el telefono del cuarto Empleado: "))) ;  
-   
-   empleado5.setNombre(JOptionPane.showInputDialog("Digite el nombre del Quinto Empleado: ")) ;  
-   empleado5.setEdad(Short.parseShort(JOptionPane.showInputDialog("Digite la edad del Quinto  Empleado: "))) ; 
-   empleado5.setDireccion(JOptionPane.showInputDialog("Digite la direccion del Quinto  Empleado: ")) ;  
-   empleado5.setTelefono(Long.parseLong(JOptionPane.showInputDialog("Digite el telefono del Quinto  Empleado: "))) ;  
+        //the data of the user of the 5 employees
+        String desea;
+        int menu; 
+        Empleado empleado1 = new Empleado("Cesar Rodriguez",18,"calle 25 # 8-52" , 313452800);
+        Empleado empleado2 = new Empleado("Camilo Paez",21,"calle 26 # 7-89", 32102302);
+        Empleado empleado3 = new Empleado("Diego Cobos",22,"Carrera 23 #22-60", 321908326);
+        Empleado empleado4 = new Empleado("David Parrado",18,"calle 28 # 6-12", 310251469);
+        Empleado empleado5 = new Empleado("Tomas Navarrete",21, "calle 15 # 58-2",312564826);
+       
        
    // we make a menu for the employee to look at your data and we ask you question that if you want to read the data of another employee 
 do {       
